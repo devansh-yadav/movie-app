@@ -11,6 +11,9 @@ import App from './App';
 // Redux
 import { store } from './redux/store';
 import { Provider } from 'react-redux';
+import { fetchMovies } from './redux/movies/fetchMoviesSlice';
+
+store.dispatch(fetchMovies())
 
 ReactDOM.render(
   <React.StrictMode>
