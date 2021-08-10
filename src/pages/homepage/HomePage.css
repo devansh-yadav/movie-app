@@ -1,0 +1,13 @@
+.homepage {
+    color: white;
+    background: #181818;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.row-container {
+    margin-top: 20px;
+    margin-left: 20px;
+}

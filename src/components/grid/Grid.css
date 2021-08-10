@@ -1,0 +1,36 @@
+.grid {
+    margin-top: 60px;
+    padding: 25px 6vw;
+    position: relative;
+}
+
+.grid-title {
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.grid-title h2 {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 400;
+}
+
+.link-container {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.link-container img {
+    max-height: 400px;
+    object-fit: contain;
+    transition: transform 450ms;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.link-container img:hover {
+    transform: scale(1.08);
+    opacity: 1;
+}
+
