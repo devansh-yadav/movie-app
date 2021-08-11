@@ -11,24 +11,10 @@ import { IMAGE_URL } from '../../api-endpoints/requests'
 
 function Row({ title, movies }) {
 
-    const arrayShuffler = (arr) => {
-        let tempArray = [];
-
-        while (arr.length !== 0) {
-            let randomIndex = Math.floor(Math.random() * arr.length)
-            tempArray.push(arr[randomIndex]);
-            arr.splice(randomIndex, 1);
-        }
-        arr = tempArray;
-        return arr;
-    }
-
-    const shuffledArray = arrayShuffler([...movies])
-
     const renderRow = () => {
         return (
-            shuffledArray.length ?
-                shuffledArray.map(item => {
+            movies.length ?
+                movies.map(item => {
                     return (
                         (item.backdrop_path &&
                             <Link key={item.id} className="link" to={{ pathname: `item/${item.id}`, state: { item } }}>
